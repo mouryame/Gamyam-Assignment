@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&display=swap");
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  font-family: "Nata Sans", sans-serif;
+  background-color: var(--shoppie-color-gray-light);
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --shoppie-color-white: #ffffff;
+  --shoppie-color-gray-light: #efefef;
+  --shoppie-color-gray: #9f9f9f;
+  --shoppie-color-gray-dark: #222222;
+
+  /* Brand colors */
+  --shoppie-color-primary-50: #eef6ff;
+  --shoppie-color-primary-100: #d9ecff;
+  --shoppie-color-primary-200: #b7dbff;
+  --shoppie-color-primary-300: #8ac3ff;
+  --shoppie-color-primary-400: #57a4fb;
+  --shoppie-color-primary: #2f80ed; /* 500 */
+  --shoppie-color-primary-600: #2564bd;
+  --shoppie-color-primary-700: #1e4f94;
+  --shoppie-color-primary-800: #1a3f75;
+  --shoppie-color-primary-900: #152f57;
+
+  --shoppie-color-accent-50: #fff5f2;
+  --shoppie-color-accent-100: #ffe6df;
+  --shoppie-color-accent-200: #ffc8b8;
+  --shoppie-color-accent-300: #ffa88f;
+  --shoppie-color-accent-400: #ff8a6b;
+  --shoppie-color-accent: #ff6b4a; /* 500 */
+  --shoppie-color-accent-600: #e35437;
+  --shoppie-color-accent-700: #c0432d;
+  --shoppie-color-accent-800: #9f3725;
+  --shoppie-color-accent-900: #7f2b1d;
+
+  --shoppie-font-size-xs: 0.5rem;
+  --shoppie-font-size-sm: 0.75rem;
+  --shoppie-font-size-md: 1rem;
+  --shoppie-font-size-lg: 1.25rem;
+  --shoppie-font-size-xl: 1.5rem;
+
+  --shoppie-border-radius-xs: 0.25rem;
+  --shoppie-border-radius-sm: 0.5rem;
+  --shoppie-border-radius-md: 0.75rem;
+  --shoppie-border-radius-lg: 1rem;
+  --shoppie-border-radius-xl: 1.5rem;
+  --shoppie-border-radius-full: 9999rem;
+
+  --shoppie-max-width: 1200px;
+}
+
+.app {
+  width: 100vw;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.25rem;
+  margin: 0 auto;
+  max-width: var(--shoppie-max-width);
+}

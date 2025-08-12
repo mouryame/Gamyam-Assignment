@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--shoppie-color-white);
+  padding: 0.75rem 1rem;
+  border-radius: var(--shoppie-border-radius-sm);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.title {
+  font-size: var(--shoppie-font-size-lg);
+  font-weight: bold;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brandIcon {
+  color: var(--shoppie-color-gray-dark);
+}
+
+.signInBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  background-color: var(--shoppie-color-primary);
+  color: var(--shoppie-color-white);
+  border-radius: var(--shoppie-border-radius-sm);
+  cursor: pointer;
+}
+
+.signInBtn:hover {
+  filter: brightness(1.03);
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}

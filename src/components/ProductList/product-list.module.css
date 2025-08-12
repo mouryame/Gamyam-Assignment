@@ -1,0 +1,103 @@
+.productList {
+  background-color: var(--shoppie-color-white);
+  flex: 1;
+  padding: 1rem;
+}
+
+.viewSwitcher {
+  width: fit-content;
+  padding: 0.25rem;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  border: 1px solid var(--shoppie-color-gray);
+  background-color: var(--shoppie-color-gray-light);
+  border-radius: var(--shoppie-border-radius-full);
+  margin-left: auto;
+}
+
+.viewSwitcher button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.9rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border-radius: var(--shoppie-border-radius-full);
+}
+
+.unselected {
+  background-color: var(--shoppie-color-white) !important;
+}
+
+.selected {
+  background-color: var(--shoppie-color-primary) !important;
+  color: var(--shoppie-color-white) !important;
+}
+
+.viewSwitcher button:not(.selected):hover {
+  background-color: var(--shoppie-color-primary-50);
+}
+
+.viewSwitcher button:focus-visible {
+  outline: 2px solid var(--shoppie-color-primary-300);
+  outline-offset: 1px;
+}
+
+.productListContainerGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.productItemGrid {
+  background-color: var(--shoppie-color-white);
+  padding: 1rem;
+  border-radius: var(--shoppie-border-radius-sm);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border: 1px solid #ececec;
+}
+
+.productTitle {
+  font-size: var(--shoppie-font-size-md);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.productPrice {
+  color: #176b36;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.productDescription {
+  color: var(--shoppie-color-gray);
+  font-size: var(--shoppie-font-size-sm);
+}
+
+.productListContainerTable {
+  width: 100%;
+}
+
+.productListContainerTable th,
+td {
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.productListContainerTable th {
+  background-color: var(--shoppie-color-gray-light);
+}
+
+.productListContainerTable tr {
+  background-color: var(--shoppie-color-white);
+}
+
+.productItemTable {
+  background-color: var(--shoppie-color-white);
+  padding: 1rem;
+  border-radius: var(--shoppie-border-radius-sm);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
